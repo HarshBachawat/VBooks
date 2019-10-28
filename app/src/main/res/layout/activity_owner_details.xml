@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6335E93B">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.project.androidLab.vbooks.OwnerDetailsActivity">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_margin="6dp"
+            android:background="#7E998888"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/profUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@drawable/layoutstyle"
+            android:padding="8dp"
+            android:text="Owner Name"
+            android:textColor="#100d0d"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/profPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@drawable/layoutstyle"
+            android:padding="8dp"
+            android:text="Owner Phone"
+            android:textColor="#100d0d"
+            android:textSize="20sp" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="6dp" />
+
+
+    </LinearLayout>
+</ScrollView>

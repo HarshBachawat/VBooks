@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6335E93B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        tools:context="com.project.androidLab.vbooks.ProfileActivity">
+
+
+        <ImageButton
+            android:id="@+id/imagebutton"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/add_im"
+            android:scaleType="centerCrop" />
+
+        <EditText
+
+            android:id="@+id/profUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/layoutstyle"
+            android:hint="Enter Display name"
+            android:padding="8dp"
+            android:textColor="#000" />
+
+        <EditText
+
+            android:id="@+id/profPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/layoutstyle"
+            android:hint="Enter Your Phone Number"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:textColor="#000" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Finish"
+            android:textColor="#021101" />
+
+    </LinearLayout>
+</ScrollView>
