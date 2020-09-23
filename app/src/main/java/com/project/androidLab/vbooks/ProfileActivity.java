@@ -58,7 +58,7 @@ public class ProfileActivity extends AppCompatActivity implements OnMapReadyCall
     private MapView mapView;
     private GoogleMap gmap;
     private LocationManager locationManager;
-    private static final String MAP_VIEW_BUNDLE_KEY = "AIzaSyD3PnRRrmeaG-LiWgM9YoHVNyWdvl4hxvY";
+    private static final String MAP_VIEW_BUNDLE_KEY = BuildConfig.GOOGLE_MAP_KEY;
     private Marker loc;
 
 

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -103,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -111,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
         }
        else if (id == R.id.action_add) {
             startActivity(new Intent(MainActivity.this, PostActivity.class));
-        } else if (id == R.id.logout){
+        }
+       else if (id == R.id.logout){
             mAuth.signOut();
             Intent logoutIntent = new Intent(MainActivity.this, RegisterActivity.class);
             logoutIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
